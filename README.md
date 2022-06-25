@@ -13,7 +13,9 @@ mkdir -p ~/.local/bin/
 ln -s ~/.tfenv/bin/* ~/.local/bin
 
 touch /home/$USER/.tfenv/version
+
 which tfenv
+
 tfenv install VERSION
 
 tfenv use VERSION
@@ -21,3 +23,26 @@ terraform -h
 
 ```
 
+## 
+
+```
+terraform init
+
+terraform fmt
+
+terraform plan
+
+terraform apply
+
+terraform show
+
+terraform state list
+
+```
+
+## 
+
+```
+terraform apply -var="instance_type=t2.micro"
+
+```
