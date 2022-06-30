@@ -1,5 +1,17 @@
 variable "instance_type" {
   type    = string
-  default = "t2.micro"
+  default = ""
+
+}
+
+
+variable "tags" {
+  type = map(any)
+ 
+  default = {
+    Name = "app_server"
+    Env  = "DEV"
+
+  }
 
 }

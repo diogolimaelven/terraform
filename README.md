@@ -37,6 +37,9 @@ terraform apply
 terraform show
 
 terraform state list
+terraform state rm "resource_name" 
+terraform taint "resource_name" - copia o recurso
+terraform untaint "resource_name"
 
 ```
 
@@ -44,5 +47,9 @@ terraform state list
 
 ```
 terraform apply -var="instance_type=t2.micro"
+
+terraform apply -varfile="var.tfvars"
+
+terraform import "resource_name" "id-instance"
 
 ```
