@@ -1,10 +1,10 @@
 # Local .terraform directories
 .terraform/*
-
+terraform_ansible/.terraform/*
 # .tfstate files
 *.tfstate
 *.tfstate.*
-
+*.pem
 # Crash log files
 crash.log
 crash.*.log
@@ -16,6 +16,8 @@ crash.*.log
 *.tfvars
 *.tfvars.json
 
+terraform_ansible/*.tfvars
+terraform_ansible/*.tfvars.json
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
 override.tf
@@ -32,3 +34,6 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+terraform_ansible/.terraformrc
+terraform_ansible/terraform.rc
