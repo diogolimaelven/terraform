@@ -1,0 +1,11 @@
+---
+  - name: wordpress
+    hosts: all
+    # executar com o comando sudo
+    become: yes
+    remote_user: ubuntu
+    #    connection: local
+
+    roles:
+      - mysql-server
+      - wordpress
